@@ -1,0 +1,50 @@
+/* style.css */
+
+/* Pour s'assurer que le footer reste en bas même si la page est vide */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style spécifique pour les images en placeholder (gris) */
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Recadre l'image sans la déformer */
+    background-color: #e9ecef;
+}
+
+/* Petit effet au survol des cartes projets */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Alignement vertical du texte dans la section héros */
+section.bg-light {
+    background-color: #f8f9fa !important; /* Gris très clair */
+}
+
+/* Animation d'entrée pour toute la page */
+body {
+    animation: fadeInAnimation ease 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); /* Un petit effet de glissement vers le haut */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

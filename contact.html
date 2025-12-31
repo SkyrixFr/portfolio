@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Joshua Adamec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/index.html">LOGO</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/cv.html">Curriculum Vitae</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html">À propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="/contact.html">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-secondary" href="/projets.html">Mes Projets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="fw-bold">Contactez-moi</h1>
+            <p class="text-muted">Vous avez une question sur un projet ou une opportunité professionnelle ?</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h3 class="mb-4">Envoyer un message</h3>
+                        
+                        <form action="https://formspree.io/f/votre-code-formspree" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nom" class="form-label">Nom</label>
+                                    <input type="text" class="form-control bg-light border-0" id="nom" name="name" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control bg-light border-0" id="email" name="email" placeholder="votre@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="sujet" class="form-label">Sujet</label>
+                                    <input type="text" class="form-control bg-light border-0" id="sujet" name="subject" placeholder="Sujet du message">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control bg-light border-0" id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-dark px-4 py-2">Envoyer le message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="h-100 ps-lg-4">
+                        <h3 class="mb-4">Mes coordonnées</h3>
+                        <p class="text-muted mb-5">
+                            Je suis actuellement étudiant en GEII et disponible pour échanger sur mes projets techniques (LIDAR, Robotique, etc.).
+                        </p>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="bg-dark text-white rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Email</h5>
+                                <a href="mailto:joshua.adamec@etu.iut-tlse3.fr" class="text-decoration-none text-muted">joshua.adamec@etu.iut-tlse3.fr</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="bg-dark text-white rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Localisation</h5>
+                                <p class="text-muted mb-0">Toulouse, France (IUT de Toulouse)</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <div class="bg-dark text-white rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">LinkedIn</h5>
+                                <a target="_blank" href="https://linkedin.com/in/joshua-adamec" class="text-decoration-none text-muted">linkedin.com/in/joshua-adamec</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5 rounded overflow-hidden shadow-sm">
+                           <img src="https://placehold.co/600x250/e9ecef/adb5bd?text=Carte+Localisation" class="img-fluid w-100" alt="Carte">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-4 mt-auto border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start fw-bold">LOGO</div>
+                <div class="col-md-4 text-center text-muted small">
+                    &copy; 2025 Joshua Adamec. Tous droits réservés.
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
