@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/index.html">LOGO</a>
+            <a class="navbar-brand fw-bold border border-3 border-dark p-1" href="/">JA</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -20,11 +20,12 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="/cv.html">Curriculum Vitae</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/index.html">À propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutme.html">À propos de moi</a></li>
                     <li class="nav-item"><a class="nav-link active fw-bold" href="/contact.html">Contact</a></li>
                     <li class="nav-item ms-2">
-                        <a class="btn btn-secondary" href="/projets.html">Mes Projets</a>
+                        <a class="btn btn-secondary" href="/projets">Mes Projets</a>
                     </li>
                 </ul>
             </div>
@@ -110,8 +111,8 @@
                         </div>
                         
                         <div class="mt-5 rounded overflow-hidden shadow-sm">
-                           <img src="https://placehold.co/600x250/e9ecef/adb5bd?text=Carte+Localisation" class="img-fluid w-100" alt="Carte">
-                        </div>
+                           <!--<img src="https://placehold.co/600x250/e9ecef/adb5bd?text=Carte+Localisation" class="img-fluid w-100" alt="Carte">-->
+                           <iframe id="map-canvas" class="map_part" width="600"  height="250"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=115E Rte de Narbonne, 31000 Toulouse&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered by <a href="https://embedgooglemaps.com">how to embed google maps</a> and <a href="https://xn--sms-ln-som-beviljar-alla-kcc.se/">smslån som beviljar alla</a></iframe>                        </div>
 
                     </div>
                 </div>
@@ -123,14 +124,18 @@
     <footer class="bg-white py-4 mt-auto border-top">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-4 text-center text-md-start fw-bold">LOGO</div>
+                <div class="col-md-4 text-center text-md-start small">
+                    Fait avec <i class="fas fa-heart" style="color: #B01E28;"></i> et du <i class="fas fa-code text-secondary"></i>
+                </div>
                 <div class="col-md-4 text-center text-muted small">
-                    &copy; 2025 Joshua Adamec. Tous droits réservés.
+                    &copy; 2026 Joshua Adamec. Tous droits réservés.<br>
+                    <a href="#" class="text-decoration-none text-muted">Politique de confidentialité</a> | 
+                    <a href="#" class="text-decoration-none text-muted">Conditions d'utilisation</a>
                 </div>
                 <div class="col-md-4 text-center text-md-end">
-                    <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="#" class="text-dark me-3"><i class="fab fa-github fa-lg"></i></a>
-                    <a href="#" class="text-dark"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/josh.admc/" class="text-dark me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a target="_blank" href="mailto:joshua.adamec@etu.iut-tlse3.fr" class="text-dark me-3"><i class="far fa-envelope fa-lg"></i></a>
+                    <a target="_blank" href="https://github.com/padmeon" class="text-dark"><i class="fab fa-github fa-lg"></i></a>
                 </div>
             </div>
         </div>
