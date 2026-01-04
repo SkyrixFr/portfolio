@@ -50,13 +50,13 @@
                         <h4 class="mb-3">Description du projet</h4>
                         
                         <p class="text-muted">
-                            Ce projet, réalisé dans le cadre de ma formation ESE2, visait à concevoir une chaîne d'acquisition biomédicale complète pour capter et visualiser l'activité électrique du cœur. 
+                            Ce projet, réalisé dans le cadre de ma formation en GEII, visait à concevoir une chaîne d'acquisition biomédicale complète pour capter et visualiser l'activité électrique du cœur. 
                             L'objectif technique était de traiter un signal analogique de très faible amplitude (quelques millivolts) dans un environnement bruité.
                         </p>
 
                         <p class="text-muted">
-                            J'ai conçu un PCB intégrant un <strong>amplificateur d'instrumentation</strong> (pour capter la différence de potentiel entre les électrodes) et une cascade de <strong>filtres actifs</strong> analogiques pour éliminer les bruits parasites (notamment le 50Hz secteur). 
-                            Le signal traité est ensuite converti en numérique via un microcontrôleur et traité informatiquement pour afficher le tracé P-QRS-T en temps réel.
+                            J'ai conçu un PCB intégrant un <strong>passe-haut à gain variable</strong> (pour éliminer les mouvements respiratoires et y appliquer un gain) et un <strong>filtre actif réjecteur</strong> pour éliminer le bruit parasite du 50Hz secteur. 
+                            Le signal traité est affiché à l'oscilloscope ensuite converti en numérique via un microcontrôleur et traité informatiquement pour afficher le tracé P-QRS-T en temps réel sur un écran.
                         </p>
 
                         <div class="border-start border-3 border-dark ps-3 my-4 text-muted fst-italic">
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <a href="https://github.com/votre-pseudo/projet-ecg" target="_blank" class="btn btn-dark btn-lg px-4">
+                        <a href="https://github.com/padmeon/projet-ecg" target="_blank" class="btn btn-dark btn-lg px-4">
                             <i class="fab fa-github me-2"></i> Voir le code source
                         </a>
                     </div>
@@ -74,11 +74,11 @@
                 <div class="col-lg-6">
                     <div class="row g-3 h-100">
                         <div class="col-6">
-                            <img src="/images/ecg2.jpg" class="img-fluid rounded w-100 h-100 object-fit-cover shadow-sm" alt="Prototype ECG">
+                            <img src="/images/ECGVue.jpg" class="img-fluid rounded w-100 h-100 object-fit-cover shadow-sm" alt="Prototype ECG">
                         </div>
                         <div class="col-6 d-flex flex-column gap-3">
                             <img src="/images/carteEcg.jpg" class="img-fluid rounded w-100 h-50 object-fit-cover shadow-sm" alt="Circuit imprimé ECG">
-                            <img src="https://placehold.co/400x200/e9ecef/adb5bd?text=Signal+Oscilloscope" class="img-fluid rounded w-100 h-50 object-fit-cover shadow-sm" alt="Signal visualisé">
+                            <img src="/images/signalECG.jpg" class="img-fluid rounded w-100 h-50 object-fit-cover shadow-sm" alt="Signal visualisé">
                         </div>
                     </div>
                 </div>
